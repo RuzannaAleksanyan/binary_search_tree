@@ -13,7 +13,7 @@ To use this BST implementation in your C++ project, follow these steps:
 - Create an instance of the binary_search_tree class, and perform various operations such as insertion, deletion, and searching in the tree.
 - Run your program to interact with the BST.
 
-# Implementation Details
+# Implementation_Details
 - node.hpp: Defines the node template struct, which represents a node in the binary search tree. It has left and right child pointers and a value of type T.
 - binary_search_tree.hpp: Contains the binary_search_tree class definition, which represents the BST. It includes member functions for various tree operations such as insertion, deletion, traversal (inorder, preorder, postorder, and level-order), and finding the minimum, maximum, and height of the tree.
 - binary_search_tree.cpp: Provides the implementation for the member functions of the binary_search_tree class.
