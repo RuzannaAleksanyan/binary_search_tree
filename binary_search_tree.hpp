@@ -104,7 +104,7 @@ node<T>* binary_search_tree<T>::copy_tree(node<T>* root) {
     node<T>* newNode = new node<T>(root->value);
     newNode->left = copy_tree(root->left);
     newNode->right = copy_tree(root->right);
-
+    
     return newNode;
 }
 
@@ -148,10 +148,10 @@ bool binary_search_tree<T>::search(node<T>* node, T val) {
 
     if(node->value == val) {
         return true;
-    } else if(root->value < val) {
-        return search(node->left, val);
-    } else {
+    } else if(node->value < val) {
         return search(node->right, val);
+    } else {
+        return search(node->left, val);
     }
 
 }
