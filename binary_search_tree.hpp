@@ -72,15 +72,15 @@ binary_search_tree<T>::binary_search_tree(T val) {
 
 template <typename T>
 binary_search_tree<T>::binary_search_tree(const binary_search_tree<T>& other) {
-    root = copyTree(other.root);
+    root = copy_tree(other.root);
 }
 
 template <typename T>
 binary_search_tree<T>& binary_search_tree<T>::operator=(const binary_search_tree& other) {
     if (this != &other) { 
-        destroyTree(root);
+        destroy_tree(root);
 
-        root = copyTree(other.root);
+        root = copy_tree(other.root);
     }
 
     return *this;
