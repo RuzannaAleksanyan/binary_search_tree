@@ -61,9 +61,7 @@ public:
 
 template <typename T>
 binary_search_tree<T>::binary_search_tree() : root{nullptr}
-{
-
-}
+{ }
 
 template <typename T>
 binary_search_tree<T>::binary_search_tree(T val) {
