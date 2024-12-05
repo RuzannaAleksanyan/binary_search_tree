@@ -320,8 +320,8 @@ void binary_search_tree<T>::preorder(node<T>* node) const {
     }
 
     std::cout << node->value << " ";
-    inorder(node->left);
-    inorder(node->right);
+    preorder(node->left);
+    preorder(node->right);
 }
 
 template <typename T>
@@ -351,8 +351,8 @@ void binary_search_tree<T>::postorder(node<T>* node) const {
         return;
     }
 
-    inorder(node->left);
-    inorder(node->right);
+    postorder(node->left);
+    postorder(node->right);
     std::cout << node->value << " ";
 }
 
